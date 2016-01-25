@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: dev
+  pool: 5
+production:
+  adapter: postgresql
+  prepared_statements: false
+
