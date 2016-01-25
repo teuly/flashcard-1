@@ -1,13 +1,10 @@
 <h1>All cards</h1>
 <ul class="cards">
-
   <% @cards.each do |card| %>
     <li>
-      <%= link_to card.translated_text, card %>
-      <%= link_to card.original_text, card %>
-      <%= link_to card.review_date.strftime("%m/%d/%Y"), card %>
-  </li>
-<% end %>
-
-
+    <%= link_to card.translated_text, card %>
+    <%= link_to card.original_text, card %>
+    <%= link_to card.review_date.strftime("%m/%d/%Y"), card %>
+    </li>
+  <% end %>
 </ul>
