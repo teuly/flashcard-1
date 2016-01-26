@@ -1,0 +1,15 @@
+<h1>Список всех карточек</h1>
+<ul class="cards">
+  <% @cards.each do |card| %>
+    <li>
+    <%=  card.translated_text %>
+    <%=  card.original_text %>
+    <%=  card.review_date.strftime("%m/%d/%Y") %>
+    <%= link_to 'Destroy', card_path(card),
+     method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Edit', edit_card_path(card) %>
+    </li>
+  <% end %>
+</ul>
+
