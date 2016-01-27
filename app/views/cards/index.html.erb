@@ -4,10 +4,10 @@
     <li>
     <%=  card.translated_text %>
     <%=  card.original_text %>
-    <%=  card.review_date.strftime("%m/%d/%Y") %>
+    <%=  card.review_date %>
     <%= link_to 'Destroy', card_path(card),
-     method: :delete,
-              data: { confirm: 'Are you sure?' } %>
+     method: :delete, 
+     data: { confirm: 'Are you sure?' } %>
     <%= link_to 'Edit', edit_card_path(card) %>
     </li>
   <% end %>
