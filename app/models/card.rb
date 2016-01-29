@@ -1,6 +1,7 @@
-class Card < ActiveRecord::Base
-	validates :translated_text,	:original_text, presence: true
-	#validates :review_date, presence: true
-    validates :translated_text,	:original_text, confirmation: false
+class Card < ActiveRecord::Base	
+  validates :review_date, :original_text, presence: true	   
+  validates :translated_text, presence: true, 
+  exclusion: { in: :original_text, message: "translated_text = original_text" }
 end
+
 
