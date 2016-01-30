@@ -8,7 +8,7 @@ validates :translated_text, presence: true
 validate :not_equal
 
  def not_equal
-   self.errors.add(:base, 'translated_text and original_text cannot be equal.') if self.translated_text == self.original_text
+   errors.add(:base, 'translated_text and original_text cannot be equal.') if translated_text == original_text
  end
 
 end
