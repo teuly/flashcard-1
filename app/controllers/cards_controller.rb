@@ -1,5 +1,6 @@
 class CardsController < ApplicationController
 
+<<<<<<< HEAD
 def new
   @card=Card.new
 end
@@ -45,3 +46,17 @@ private
     params.require(:card).permit(:translated_text, :original_text, :review_date) 	
   end
 end
+=======
+  def show
+	@card = Card.find(params[:id])
+  end
+
+  def index
+    @cards = Card.all
+  end
+
+ def new
+ end
+
+ end	
+>>>>>>> af522a6195add78cf4cecd2d5b6337d5ebb0a3c1

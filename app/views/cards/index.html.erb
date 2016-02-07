@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p1>Список всех карточек</p1>
 <ul class="cards">
   <% @cards.each do |card| %>
@@ -11,3 +12,15 @@
   <% end %>
 </ul>
 
+=======
+<h1>All cards</h1>
+<ul class="cards">
+  <% @cards.each do |card| %>
+    <li>
+    <%= link_to card.translated_text, card %>
+    <%= link_to card.original_text, card %>
+    <%= link_to card.review_date.strftime("%m/%d/%Y"), card %>
+    </li>
+  <% end %>
+</ul>
+>>>>>>> af522a6195add78cf4cecd2d5b6337d5ebb0a3c1

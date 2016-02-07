@@ -1,17 +1,25 @@
 Rails.application.routes.draw do
  
   resources :cards
+<<<<<<< HEAD
 
   match '/cards', to: 'cards#index', via: 'get'
   match '/edit', to: 'cards#edit', via: 'get'
   match '/show', to: 'cards#show', via: 'get'
   match '/new', to: 'cards#new', via: 'get' 
  
+=======
+  match '/cards', to: 'cards#index', via: 'get'
+>>>>>>> af522a6195add78cf4cecd2d5b6337d5ebb0a3c1
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+<<<<<<< HEAD
   root 'home#index1'
+=======
+  root 'home#index'
+>>>>>>> af522a6195add78cf4cecd2d5b6337d5ebb0a3c1
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

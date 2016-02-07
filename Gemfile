@@ -3,7 +3,11 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
+<<<<<<< HEAD
 gem 'simple_form'
+=======
+
+>>>>>>> af522a6195add78cf4cecd2d5b6337d5ebb0a3c1
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

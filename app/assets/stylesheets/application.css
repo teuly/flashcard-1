@@ -40,8 +40,11 @@
   margin: 0 16px;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> af522a6195add78cf4cecd2d5b6337d5ebb0a3c1
 /* MISC */
 
 .clearfix:after {content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;} html[xmlns].clearfix{display:block;} * html .clearfix{height:1%;}
